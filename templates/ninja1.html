@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<h1>{{hello}}</h1>
+		{% if hello=="leonardo" %}
+    		<img src="{{ url_for('static', filename='images/leonardo.jpg') }}">
+    	{% endif %}
+		{% if hello=="michelangelo" %}
+			<img src="{{ url_for('static', filename='images/michelangelo.jpg') }}">
+		{% endif %}
+		{% if hello=="raphael" %}
+			<img src="{{ url_for('static', filename='images/raphael.jpg') }}">
+		{% endif %}
+		{% if hello=="donatello" %}
+			<img src="{{ url_for('static', filename='images/donatello.jpg') }}">
+		{% endif %}
+		{% if hello=="notapril" %}
+			<img src="{{ url_for('static', filename='images/notapril.jpg') }}">
+		{% endif %}
+	</body>
+</html>
